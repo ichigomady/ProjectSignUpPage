@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -33,35 +34,35 @@
             <div class="col">
                 <div class="mini-container">
                     <label for="firstName">FIRST NAME</label>
-                    <input type="text" name="firstName" id="firstName" required>
+                    <input type="text" name="firstName" id="firstName" tabindex="1" required>
                 </div>
                 <div class="mini-container">
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" autocomplete="off" required>
+                    <input type="email" name="email" id="email" autocomplete="off" placeholder="email@example.com" tabindex="3" required>
                 </div>
                 <div class="mini-container">
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" required>
-                    <small class="validation">*Passwords do not match</small>
+                    <input type="password" name="password" id="password" tabindex="5" required>
+                    <small id="validation"></small>
                 </div>
             </div>
             <div class="col">
                 <div class="mini-container">
                     <label for="lastName">LAST NAME</label>
-                    <input type="text" name="lastName" id="lastName" required>
+                    <input type="text" name="lastName" id="lastName" tabindex="2" required>
                 </div>
                 <div class="mini-container">
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="9876543210" maxlength="10" pattern="[0-9]{10}" required>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="9876543210" maxlength="10" pattern="[0-9]{10}" tabindex="4" required>
                 </div>
                 <div class="mini-container">
                     <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    <input type="password" name="confirmPassword" id="confirmPassword" tabindex="6" required>
                 </div>
             </div>
         </form>
         <div class="outer">
-            <button class="submit" form="formid">Create Account</button>
+            <button class="submit" form="formid" tabindex="7">Create Account</button>
             <small>Already have an account? <a href="#">Log in</a></small>
         </div>
     </div>
