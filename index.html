@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="left">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="logo">
+            <div class="title">ODIN</div>
+        </div>
+        <small class="pic-credit">
+            Photo by <a
+                href="https://unsplash.com/@sallybrad2016?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Preethi
+                Viswanathan</a> on <a
+                href="https://unsplash.com/photos/GCof3Y8EO8o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </small>
+    </div>
+    <div class="right">
+        <div class="intro">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams.</p>
+            <p>Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <p>Let's do this!</p>
+        <form action="" class="container" id="formid" method="post">            
+            <div class="col">
+                <div class="mini-container">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+                <div class="mini-container">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" autocomplete="off" required>
+                </div>
+                <div class="mini-container">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required>
+                    <small class="validation">*Passwords do not match</small>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mini-container">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+                <div class="mini-container">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="9876543210" maxlength="10" pattern="[0-9]{10}" required>
+                </div>
+                <div class="mini-container">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                </div>
+            </div>
+        </form>
+        <div class="outer">
+            <button class="submit" form="formid">Create Account</button>
+            <small>Already have an account? <a href="#">Log in</a></small>
+        </div>
+    </div>
 </body>
+
 </html>

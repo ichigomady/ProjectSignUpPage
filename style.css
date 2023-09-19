@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url("./assets/Norse-Bold.otf");
+}
+
+body {
+    display: flex;
+    max-height: 100vh;
+}
+
+a {
+    color: inherit;
+}
+
+.left {
+    background-image: url("./assets/fern_pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    flex: 0.40;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: relative;
+    top: 20vh;
+}
+
+.title {
+    font-family: Norse-Bold;
+    font-size: 6vh;
+    align-self: center;
+}
+
+.pic-credit {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 1vh;
+}
+
+.right {
+    flex: 0.60;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vh;
+    margin-right: 25vh;
+}
+
+.intro {
+    flex: 0.25;
+    margin-top: 10vh;
+    font-size: large;
+    font-weight: 600;
+}
+
+.intro>p+p {
+    margin-bottom: 4vh;
+}
+
+.container {
+    flex: 0.40;
+    display: flex;
+    gap: 8rem;
+}
+
+.col {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mini-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.8rem;
+    color: rgb(41, 37, 37);
+    padding-bottom: 0.2rem;
+}
+
+.right>p {
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+input {
+    width: 100%;
+    height: 1.5rem;
+    border: 1px solid #f7e9e9;
+    border-radius: 0.2rem;
+    padding: 0.7rem;
+}
+
+input:hover {
+    border: 1px solid #aaa;
+}
+
+input:focus,
+input:focus-visible {
+    border: thin solid #84abf8;
+    box-shadow: 0 .7rem .35rem rgba(0, 0, 0, 0.075);
+}
+
+.invalid {
+    border: thin solid #f54040;
+}
+
+.valid {
+    border: thin solid #23fa47;
+}
+
+.outer {
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    color: white;
+    padding: 15px;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #596D48;
+    width: 30%;
+    cursor: pointer;
+}
+
+
+small {
+    font-size: 1.1rem;
+}
+
+.outer > small > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
+}
+
+.validation {
+     color: #f54040;
+     font-size: 0.9rem;
+}
