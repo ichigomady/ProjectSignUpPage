@@ -47,7 +47,7 @@ a {
 
 .title {
     font-family: Norse-Bold;
-    font-size: 6vh;
+    font-size: 3.5rem;
     align-self: center;
 }
 
@@ -55,7 +55,7 @@ a {
     color: white;
     position: fixed;
     bottom: 0;
-    padding-bottom: 1vh;
+    padding-bottom: 1rem;
 }
 
 .right {
@@ -64,25 +64,25 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3vh;
-    margin-right: 25vh;
+    padding: 3rem;
+    margin-right: 15rem;
 }
 
 .intro {
-    flex: 0.25;
-    margin-top: 10vh;
+    flex: 0.33;
+    margin-top: 4rem;
     font-size: large;
     font-weight: 600;
 }
 
 .intro>p+p {
-    margin-bottom: 4vh;
+    margin-bottom: 1.5rem;
 }
 
 .container {
-    flex: 0.40;
+    flex: 0.34;
     display: flex;
-    gap: 8rem;
+    gap: 6rem;
 }
 
 .col {
@@ -136,8 +136,8 @@ input:focus-visible {
 }
 
 .outer {
-    margin-top: 1.5rem;
-    flex: 0.35;
+    margin-top: 1rem;
+    flex: 0.33;
     display: flex;
     flex-direction: column;
     gap: 1rem;
